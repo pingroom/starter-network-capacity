@@ -1,0 +1,52 @@
+{
+  "networkId": "practice-transfer",
+  "title": "Practice transfer network",
+  "unit": "cards per hour",
+  "period": "One fixed practice hour; all links available together",
+  "nodes": [
+    {
+      "id": "source",
+      "label": "Intake"
+    },
+    {
+      "id": "north",
+      "label": "North desk"
+    },
+    {
+      "id": "south",
+      "label": "South desk"
+    },
+    {
+      "id": "sink",
+      "label": "Archive"
+    }
+  ],
+  "source": "source",
+  "sink": "sink",
+  "links": [
+    {
+      "id": "intake-north",
+      "from": "source",
+      "to": "north",
+      "label": "Intake to north"
+    },
+    {
+      "id": "intake-south",
+      "from": "source",
+      "to": "south",
+      "label": "Intake to south"
+    },
+    {
+      "id": "north-archive",
+      "from": "north",
+      "to": "sink",
+      "label": "North to archive"
+    },
+    {
+      "id": "south-archive",
+      "from": "south",
+      "to": "sink",
+      "label": "South to archive"
+    }
+  ]
+}
